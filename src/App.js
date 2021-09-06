@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./component/Header";
+import Header from "./component/Header/Header";
 
 const AppWrapper = styled.div`
-  max-width: 1146px;
+  max-width: 1200px;
+  padding: 0 27px;
   margin: 0 auto;
   min-height: 100vh;
 `
@@ -11,7 +12,7 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper className="App">
-        <Header />
+      <Header/>
     </AppWrapper>
   );
 }

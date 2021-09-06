@@ -28,23 +28,31 @@ const Global = createGlobalStyle`
     line-height: 28px;
     font-weight: 700;
   }
+
   h3 {
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
   }
+
   h4 {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
   }
+
   h5 {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
   }
+
   a {
     text-decoration: none;
+  }
+
+  ul, ol {
+    list-style: none;
   }
 `
 const theme = {
@@ -54,6 +62,9 @@ const theme = {
     text: "#0A143A",
     textGray: "#C4C4C4",
     white: "#FFFFFF"
+  },
+  media: {
+    tablet: "(max-width: 768px)"
   }
 }
 
