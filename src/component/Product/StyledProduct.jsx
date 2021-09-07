@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {StyledButton} from "../buttons/StyledButton";
+import {StyledPerson} from "../Persone/StyledPerson";
 
 export const StyledProduct = styled.div`
   display: flex;
@@ -10,6 +11,11 @@ export const StyledProduct = styled.div`
     min-height: 54px;
     margin-bottom: 14px;
   }
+
+  ${StyledPerson} {
+    margin-bottom: 30px;
+  }
+
 `
 export const StyledProductColumn = styled.div`
   &:first-of-type {

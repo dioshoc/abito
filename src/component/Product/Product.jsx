@@ -7,8 +7,18 @@ import {
   StyledProductTitle
 } from "./StyledProduct";
 import {StyledButton} from "../buttons/StyledButton";
+import Person from "../Persone/Person";
+import personImg from "../../assets/images/person.png"
 
 const Product = () => {
+  const person = {
+    name: "Михаил Воровьев",
+    profession: "Частное лицо",
+    img: personImg,
+    rating: 5,
+    testimonials: 5
+  }
+
   return (
     <StyledProduct>
       <StyledProductPreView>
@@ -20,10 +30,12 @@ const Product = () => {
         <StyledProductColumn>
           <StyledProductPrice>
             75 000 ₽
-
-            <StyledButton>Показать телефон</StyledButton>
-            <StyledButton secondary>Написать сообщение</StyledButton>
           </StyledProductPrice>
+
+          <Person person={person}/>
+
+          <StyledButton>Показать телефон</StyledButton>
+          <StyledButton secondary>Написать сообщение</StyledButton>
         </StyledProductColumn>
       </StyledProductPreView>
       <StyledProductDescription>
