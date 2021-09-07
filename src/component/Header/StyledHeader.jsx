@@ -27,14 +27,19 @@ export const StyledHeaderColumnMobile = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media ${props => props.theme.device.tablet} {
+    display: none;
+  }
 
   &.active {
     height: 100%;
     width: 30%;
+    min-width: 250px;
     padding: 25px;
     top: 0;
     right: 0;
     z-index: 100;
+    display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: flex-start;
@@ -53,7 +58,6 @@ export const StyledHeaderColumnMobile = styled.div`
         color: ${props => props.theme.colors.white}
       }
     }
-
 
     ${StyledHeaderButtonsWrapper} {
       flex-direction: column;
@@ -89,5 +93,8 @@ export const StyledHeaderMobileBlackout = styled.div`
   }
 `
 export const StyledHeaderMobileButton = styled.div`
-  //display: none;
+  display: none;
+  @media ${props => props.theme.device.tablet} {
+    display: flex;
+  }
 `

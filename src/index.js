@@ -15,7 +15,9 @@ const theme = {
     white: "#FFFFFF",
     black: "#000000"
   },
-
+  device: {
+    tablet: `(max-width: 768px)`,
+  },
 }
 
 ReactDOM.render(

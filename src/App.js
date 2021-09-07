@@ -7,7 +7,8 @@ import SinglePage from "./component/SinglePage/SinglePage";
 import {Search} from "./component/Search/Search";
 
 const AppWrapper = styled.div`
-  max-width: 1146px;
+  max-width: 1200px;
+  padding: 0 calc(54px / 2);
   margin: 0 auto;
 `
 

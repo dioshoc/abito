@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import {StyledButton} from "../buttons/StyledButton";
+import SearchIcon from "../icons/SearchIcon";
 
 export const StyledSearch = styled.div`
+  margin-bottom: 45px;
+
   & svg {
     margin-right: 5px;
     margin-bottom: 1px;
@@ -9,6 +12,13 @@ export const StyledSearch = styled.div`
 
   & ${StyledButton} {
     padding: 15px 20px;
+    @media ${props => props.theme.device.tablet} {
+      font-size: 0;
+      padding: 16px 12px;
+      ${SearchIcon} {
+        margin: 0
+      }
+    }
   }
 `
 export const StyledSearchForm = styled.form`
