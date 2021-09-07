@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledPosts = styled.div``
 export const StyledPostsList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 264px);
   grid-gap: 30px;
 `
 export const StyledPostsListItem = styled.li`
