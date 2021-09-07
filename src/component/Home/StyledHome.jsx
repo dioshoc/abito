@@ -8,4 +8,5 @@ export const StyledHomeSideBar = styled.div`
   max-width: 264px;
   margin-left: 30px;
   display: flex;
+  flex-direction: column;
 `
