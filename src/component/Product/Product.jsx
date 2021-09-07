@@ -8,28 +8,23 @@ import {
 } from "./StyledProduct";
 import {StyledButton} from "../buttons/StyledButton";
 import Person from "../Persone/Person";
-import personImg from "../../assets/images/person.png"
+import Gallery from "../Gallery/Gallery";
 
-const Product = () => {
-  const person = {
-    name: "Михаил Воровьев",
-    profession: "Частное лицо",
-    img: personImg,
-    rating: 5,
-    testimonials: 5
-  }
+const Product = ({product: {person, gallery, name, price, description}}) => {
+
 
   return (
     <StyledProduct>
       <StyledProductPreView>
         <StyledProductColumn>
           <StyledProductTitle>
-            Электросамокат kugoo Gx
+            {name}
           </StyledProductTitle>
+          <Gallery gallery={gallery}/>
         </StyledProductColumn>
         <StyledProductColumn>
           <StyledProductPrice>
-            75 000 ₽
+            {price} ₽
           </StyledProductPrice>
 
           <Person person={person}/>
@@ -39,14 +34,7 @@ const Product = () => {
         </StyledProductColumn>
       </StyledProductPreView>
       <StyledProductDescription>
-        Продаю не спеша самокат в хорошем состоянии.
-        Торг возможен.
-        За период эксплуатации не выявлено ни одной проблемы.
-        Из минусов — нужно прокачать задний тормоз.
-        Установлен отсекатель сзади.
-        Покрышки CST внедорожные.
-        Все на подшипниках, болты протянуты.
-        Пробег 881км , это немного для такого зверя.
+        {description}
       </StyledProductDescription>
     </StyledProduct>
   )

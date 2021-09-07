@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {StyledButton} from "../buttons/StyledButton";
 import {StyledPerson} from "../Persone/StyledPerson";
+import {StyledGallery} from "../Gallery/StyledGallery";
 
 export const StyledProduct = styled.div`
   display: flex;
@@ -13,6 +14,10 @@ export const StyledProduct = styled.div`
   }
 
   ${StyledPerson} {
+    margin-bottom: 30px;
+  }
+
+  ${StyledGallery} {
     margin-bottom: 30px;
   }
 
