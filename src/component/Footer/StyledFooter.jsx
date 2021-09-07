@@ -16,7 +16,13 @@ export const StyledFooterPrivacyPolicyItem = styled.li`
 
   & a {
     text-decoration: underline;
-    color: ${props => props.theme.colors.textGray}
+    color: ${props => props.theme.colors.textGray};
+    transition: opacity .2s ease-in;
+
+    &:hover {
+      opacity: .6;
+    }
+
   }
 `
 export const StyledFooterHelpLinks = styled.ul``
@@ -26,5 +32,10 @@ export const StyledFooterHelpLinksItem = styled.li`
   & a {
     font-size: 12px;
     line-height: 14px;
+    transition: opacity .2s ease-in;
+
+    &:hover {
+      opacity: .6;
+    }
   }
 `

@@ -3,7 +3,7 @@ import {StyledButton} from "../buttons/StyledButton";
 import SearchIcon from "../icons/SearchIcon";
 
 export const StyledSearch = styled.div`
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 
   & svg {
     margin-right: 5px;

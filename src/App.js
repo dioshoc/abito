@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "./component/Header/Header";
 import {Route, Switch} from "react-router-dom";
 import Home from "./component/Home/Home";
-import SinglePage from "./component/SinglePage/SinglePage";
+import SinglePage from "./component/SingleProductPage/SingleProductPage";
 import {Search} from "./component/Search/Search";
 
 const AppWrapper = styled.div`
